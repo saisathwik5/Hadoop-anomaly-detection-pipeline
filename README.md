@@ -95,15 +95,3 @@ spark-submit anomaly_pipeline/spark_jobs.py \
   --accounts sample_data/accounts.csv \
   --output output
 ```
-
-## Resume Bullets
-
-- Built a Hadoop ELT pipeline ingesting transactional data into HDFS/Hive with
-  partition-aware schema validation and data quality enforcement across pipeline
-  stages.
-- Implemented anomaly detection with statistical process control in Python and
-  Spark-compatible logic, generating reconciliation alerts for high-risk data
-  quality violations.
-- Orchestrated the pipeline with Apache Airflow using scheduled DAG tasks,
-  dependency management, retries, and CI-backed regression tests.
-
