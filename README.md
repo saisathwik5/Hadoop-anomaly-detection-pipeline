@@ -95,3 +95,16 @@ spark-submit anomaly_pipeline/spark_jobs.py \
   --accounts sample_data/accounts.csv \
   --output output
 ```
+## Sample Output
+
+A local Spark run writes two Parquet datasets:
+
+```text
+output/
+├── daily_anomaly_scores/
+│   ├── part-00000-...snappy.parquet
+│   └── _SUCCESS
+└── refined_transactions/
+    ├── _SUCCESS
+    └── txn_date=2025-02-01/
+        └── part-00000-...snappy.parquet
