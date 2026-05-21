@@ -19,7 +19,9 @@ jobs:
           distribution: temurin
           java-version: "17"
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
       - name: Format and lint
         run: |
           black --check anomaly_pipeline tests

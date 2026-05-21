@@ -9,3 +9,14 @@ line_length = 100
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--basetemp=.pytest_tmp"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "anomaly_pipeline"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+where = ["."]
